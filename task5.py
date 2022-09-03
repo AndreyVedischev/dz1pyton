@@ -5,3 +5,16 @@
     
 #     - A (3,6); B (2,1) -> 5,09
 #     - A (7,-5); B (1,-1) -> 7,21
+
+import math
+
+print('Введите координаты точки А: ')
+x_1 = int(input('x1: '))
+y_1 = int(input('y1: '))
+
+print('Введите координаты точки B: ')
+x_2 = int(input('x2: '))
+y_2 = int(input('y2: '))
+
+c = float(math.sqrt(math.pow((x_1 - x_2),2) + math.pow((y_1 - y_2),2)))
+print(round(c,3))
